@@ -51,10 +51,10 @@ document.getElementById('theme').addEventListener('click', () => {
     wordDiv.appendChild(space);
     input.append(wordDiv);
   }
-
+})().then(() => {
   prev = document.getElementById('0');
   prev.classList.add('current', 'flash');
-})();
+});
 
 for (let i = 0; i < keys.length; i++) {
   const row = document.createElement('div');
