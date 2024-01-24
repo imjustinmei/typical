@@ -18,8 +18,11 @@ const keys = ['qwertyuiop', 'asdfghjkl', 'zxvcbnm'];
 const keyboard = document.getElementById('keyboard');
 
 // theme
-const theme = localStorage.getItem('theme');
-if (!theme) localStorage.setItem('theme', 'light');
+let theme = localStorage.getItem('theme');
+if (!theme) {
+  localStorage.setItem('theme', 'light');
+  theme = 'light';
+}
 style.href = 'css/' + theme + '.css';
 document.getElementById('theme').textContent = theme;
 document.getElementById('theme').addEventListener('click', () => {
