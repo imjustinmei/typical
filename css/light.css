@@ -1,0 +1,45 @@
+.item {
+  border-color: #1b262c;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.key {
+  padding: 0.6em;
+  font-size: 2.5em;
+  background-color: #eeeeee;
+  border: medium solid #393e46;
+  border-radius: 15px;
+  margin: 0.1em;
+}
+
+.pressed {
+  color: #222831;
+  background-color: #eeeeee;
+  border-color: #71c9ce;
+  animation: fade 0.2s linear;
+}
+
+.right {
+  background-color: #eaffd0;
+}
+
+.wrong {
+  background-color: #ffd1d1;
+}
+
+.flash {
+  animation: flash 1.75s infinite;
+}
+
+@keyframes flash {
+  0% {
+    border-color: #1b262c;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #1b262c;
+  }
+}
