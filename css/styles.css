@@ -12,6 +12,19 @@ body {
   margin-bottom: -2em;
 }
 
+#restart {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  font-size: 0.8em;
+  user-select: none;
+}
+
+#restart:hover {
+  cursor: pointer;
+  color: #a8d8ea;
+}
+
 #input {
   position: relative;
   width: 1100px;
@@ -19,7 +32,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   user-select: none;
-  margin: 4em 0 0.5em;
+  margin: 4em 0 0.5em 3em;
   height: 225px;
   padding-left: 2px;
   overflow: hidden;
@@ -37,6 +50,10 @@ body {
   position: absolute;
 }
 
+#bar:hover {
+  cursor: default;
+}
+
 .current {
   box-sizing: border-box;
   border-left: 2px solid;
@@ -46,6 +63,25 @@ body {
 #keyboard {
   user-select: none;
   margin-bottom: 4em;
+}
+
+.item {
+  display: inline-block;
+}
+
+.key {
+  padding: 0.6em;
+  font-size: 2.4em;
+  border-radius: 15px;
+  margin: 0.1em;
+}
+
+.pressed {
+  animation: fade 0.2s linear;
+}
+
+.flash {
+  animation: flash 1.75s infinite;
 }
 
 .row {
@@ -58,6 +94,10 @@ body {
   margin-left: -5%;
 }
 
+#theme:hover {
+  cursor: pointer;
+}
+
 @keyframes fade {
   from {
     opacity: 0.25;
@@ -65,8 +105,4 @@ body {
   to {
     opacity: 1;
   }
-}
-
-#theme:hover {
-  cursor: pointer;
 }

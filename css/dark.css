@@ -6,24 +6,17 @@ body {
 .item {
   color: #00adb5;
   border-color: #eaeaea;
-  display: inline-block;
-  margin-right: 2px;
 }
 
 .key {
-  padding: 0.6em;
-  font-size: 2.5em;
   color: #eeeeee;
   background-color: #1b262c;
   border: medium solid #dbe2ef;
-  border-radius: 15px;
-  margin: 0.1em;
 }
 
 .pressed {
   color: #95e1d3;
   border-color: #71c9ce;
-  animation: fade 0.2s linear;
 }
 
 .right {
@@ -34,8 +27,8 @@ body {
   color: #b83b5e;
 }
 
-.flash {
-  animation: flash 1.75s infinite;
+.wrong-space {
+  background-color: #b83b5e;
 }
 
 @keyframes flash {
