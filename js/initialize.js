@@ -2,7 +2,7 @@
 let max;
 let prev;
 let words;
-const keys = ['qwertyuiop', 'asdfghjkl', 'zxvcbnm'];
+const keys = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm'];
 const keyboard = document.getElementById('keyboard');
 const style = document.getElementById('style');
 const bar = document.getElementById('bar');
