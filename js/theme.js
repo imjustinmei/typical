@@ -1,4 +1,4 @@
-const initialTheme = localStorage.getItem('theme');
+const initialTheme = localStorage.getItem('theme') || 'light';
 style.href = 'css/' + initialTheme + '.css';
 document.getElementById('theme').textContent = initialTheme == 'light' ? 'dark' : 'light';
 
