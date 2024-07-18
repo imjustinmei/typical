@@ -29,7 +29,11 @@ const generate = () => {
   startTime = null;
   results.style.display = 'none';
 
-  populate().then(() => {
+  populate().then((res) => {
+    if (!res) {
+      document.getElementById('status').textContent = 'word machine broke. try again later...';
+      return;
+    }
     prev = document.getElementById('0');
     prev.classList.add('current', 'flash');
   });

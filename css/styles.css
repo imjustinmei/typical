@@ -77,7 +77,7 @@ body {
 }
 
 .pressed {
-  animation: fade 0.2s linear;
+  animation: fade 0.1s linear;
 }
 
 .flash {
@@ -100,7 +100,7 @@ body {
 
 @keyframes fade {
   from {
-    opacity: 0.25;
+    opacity: 0.45;
   }
   to {
     opacity: 1;
