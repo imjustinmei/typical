@@ -11,12 +11,11 @@ const input = document.getElementById('input');
 // populate text
 const populate = async () => {
   try {
-    const response = await fetch('https://random-word.ryanrk.com/api/en/word/random/30');
+    const response = await fetch('https://random-word-api.herokuapp.com/word?number=25');
     words = await response.json();
   } catch (err) {
     if (!words) return false;
   }
-  words = words.filter((word) => /^[a-zA-Z]*$/.test(word)).map((word) => word.toLowerCase());
   max = words.reduce((acc, str) => acc + str.length, 0) + words.length - 1;
 
   for (const word of words) {
